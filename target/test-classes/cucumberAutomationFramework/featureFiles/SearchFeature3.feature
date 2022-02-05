@@ -18,7 +18,7 @@ Examples:
     | expression | expectedResult |
     | 4+4        | 8              | 
     | 5/0        | undefined      |
-    | 5^3        | 125            | 
+    | 5^3        | 126            | 
     | 4!         | 24	          | 
     | sqrt(-9)   | 3 i	          | 
     

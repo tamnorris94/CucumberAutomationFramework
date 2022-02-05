@@ -80,16 +80,14 @@ public class SearchFeature {
 		Boolean invalidResultDisplay = driver.findElements(By.cssSelector("div[class='dDoNo vrBOv vk_bk']")).size() > 0;
 
 		if(validResultDisplay) {
-			System.out.println("validResultDisplay is present");
 			String resultText = driver.findElement(By.xpath("//*[@id=\"cwos\"]")).getText();
-			System.out.println("result is " + resultText);
-			assertTrue(resultText.contains(result));
+			System.out.println("Expected result was  " + result + ". Actual result was " + resultText);
+			assertTrue(resultText.equals(result));			
 			validResultDisplay = false;
 		} else if(invalidResultDisplay){
-			System.out.println("invalidResultDisplay is present");
 			String resultText = driver.findElement(By.cssSelector("div[class='dDoNo vrBOv vk_bk']")).getText();
-			assertTrue(resultText.contains(result));
-			System.out.println("result is " + resultText);
+			System.out.println("Expected result was  " + result + ". Actual result was " + resultText);
+			assertTrue(resultText.equals(result));
 			invalidResultDisplay = false;
 		} else {
 			Assert.assertFalse(true);
