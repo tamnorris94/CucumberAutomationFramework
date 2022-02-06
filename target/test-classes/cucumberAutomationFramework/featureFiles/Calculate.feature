@@ -1,13 +1,12 @@
 Feature: Calculator
   As a user
   I want to use google to evaluate mathematical expressions
-  So that I don't need to add myself
+  So that I don't need to use a calculator or do them in my head
   
 @StartBrowser
 Scenario: Start browser session
   When I initialize driver
   Then open browser
-  ##Then close browser
 
 @MyTest1
 Scenario Outline: Enter a maths expression

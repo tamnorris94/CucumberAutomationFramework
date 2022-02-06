@@ -33,7 +33,7 @@ import cucumberAutomationFramework.utilityClasses.BrowserInitTearDownStepDefinit
 import org.junit.Assert;
 import org.junit.runner.RunWith;
 
-public class SearchFeature {
+public class CalculateFeature {
 	
 	WebDriver driver = WebDriverUtils.getDriver();
 	
