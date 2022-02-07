@@ -27,17 +27,36 @@ rather than having the browser open and close for each one.
     
 #### How to download project from Github in to Eclipse
 
+The following steps are applicable for Eclipse version 2021-12 (4.22.0), Build id: 20211202-1639. 
+
+The Java version used is 1.8 (jdk1.8.0_321) will need to be installed.
+
 1. Open Eclipse and select desired workspace.
 2. Select File > Import, select Projects from GIT (with smart import)
 3. On Select Repository Source screen select 'Clone URI' and Next.
-4. 
+4. Navigate to the Github page for this project and select the Code button and with HTTPS option selected click button to copy URI.
+5. Go back to Eclipse and paste URI into URI input box and click 'Next'.
+6. With Master branch selected on Branch Selection page click Next.
+7. Browser to folder location where you want project stored locally and click Next.
+8. Click Finish on Import Projects from File System or Archive
+9. Wait for project to finish building.
+10. If you get errors 'Build path specifies execution environment Java SE xxx.
+There are no JREs installed in the workspace that are strictly compatible with this environment' check that the build path is pointing to the correct Java jdk by following below steps.
 
-
+10a. Right click on project and select Build Path > Configure Build Path.
+10b. Select the JRE System Library and select Edit.
+10c. Select Alternate JRE and click installed JREs'.
+10d. Click the Add button
+10e. With Standard VM selected on JRE Type screen, select 'Next''.
+10f. Browse to the folder where the JDK is installed and click Select Folder.
+10g. The JRE name input box should be populated with the name of the JDK i.e. jdk1.8.0_321
+10h. Click finish.
+10i. Check the newly added installed JRE and click Apply and Close and the build errors should disappear.
     
 #### How to run
 
 1. With the Project open in Eclipse, right click on the feature file 'Calculate.feature' under src/test/java/cucumberAutomationFramework\featureFiles and select Run As > Run Configurations.
 
-2. Click the browse button against feature path and browse to the feature file.
+2. Click the browse button against feature path and browse to the feature file in the directory where the project was installed locally. Will be under sub folder \CucumberAutomationFramework\src\test\java\cucumberAutomationFramework\featureFiles'
 
-3. Click Run.
+3. Click Run and verify that the Chrome browser opens and the cucumber scenarios execute. 
