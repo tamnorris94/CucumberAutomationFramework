@@ -25,7 +25,12 @@ rather than having the browser open and close for each one.
     
     ....
     
-#### How to download project from Github
+#### How to download project from Github in to Eclipse
+
+1. Open Eclipse and select desired workspace.
+2. Select File > Import, select Projects from GIT (with smart import)
+3. On Select Repository Source screen select 'Clone URI' and Next.
+4. 
 
 
     
