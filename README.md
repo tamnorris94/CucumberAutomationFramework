@@ -43,15 +43,15 @@ The Java version used is 1.8 (jdk1.8.0_321) will need to be installed.
 10. If you get errors 'Build path specifies execution environment Java SE xxx.
 There are no JREs installed in the workspace that are strictly compatible with this environment' check that the build path is pointing to the correct Java jdk by following below steps.
 
-10a. Right click on project and select Build Path > Configure Build Path.
-10b. Select the JRE System Library and select Edit.
-10c. Select Alternate JRE and click installed JREs'.
-10d. Click the Add button
-10e. With Standard VM selected on JRE Type screen, select 'Next''.
-10f. Browse to the folder where the JDK is installed and click Select Folder.
-10g. The JRE name input box should be populated with the name of the JDK i.e. jdk1.8.0_321
-10h. Click finish.
-10i. Check the newly added installed JRE and click Apply and Close and the build errors should disappear.
+1. Right click on project and select Build Path > Configure Build Path.
+2. Select the JRE System Library and select Edit.
+3. Select Alternate JRE and click installed JREs'.
+4. Click the Add button
+5. With Standard VM selected on JRE Type screen, select 'Next''.
+6. Browse to the folder where the JDK is installed and click Select Folder.
+7. The JRE name input box should be populated with the name of the JDK i.e. jdk1.8.0_321
+8. Click finish.
+9. Check the newly added installed JRE and click Apply and Close and the build errors should disappear.
     
 #### How to run
 
