@@ -1,0 +1,431 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 7,
+        "name": "Start browser session",
+        "description": "",
+        "id": "calculator;start-browser-session",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3564405800,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I initialize driver",
+            "match": {
+              "location": "BrowserInitTearDownStepDefinitions.initializeDriver()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1733041400,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "open browser",
+            "match": {
+              "location": "BrowserInitTearDownStepDefinitions.openBrowser()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 6,
+            "name": "@StartBrowser"
+          }
+        ]
+      },
+      {
+        "line": 18,
+        "name": "Enter a maths expression",
+        "description": "",
+        "id": "calculator;enter-a-maths-expression;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2284977100,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User enters the maths expression 4+4",
+            "match": {
+              "arguments": [
+                {
+                  "val": "4+4",
+                  "offset": 33
+                }
+              ],
+              "location": "CalculateFeature.user_enters_the_maths_expression(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4179307100,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "the user clicks the Search button",
+            "match": {
+              "location": "CalculateFeature.the_user_clicks_the_Search_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3137996600,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "The result of 8 is returned",
+            "match": {
+              "arguments": [
+                {
+                  "val": "8",
+                  "offset": 14
+                }
+              ],
+              "location": "CalculateFeature.result_is_returned(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 11,
+            "name": "@MyTest1"
+          }
+        ]
+      },
+      {
+        "line": 19,
+        "name": "Enter a maths expression",
+        "description": "",
+        "id": "calculator;enter-a-maths-expression;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2277673200,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User enters the maths expression 5/0",
+            "match": {
+              "arguments": [
+                {
+                  "val": "5/0",
+                  "offset": 33
+                }
+              ],
+              "location": "CalculateFeature.user_enters_the_maths_expression(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3977905700,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "the user clicks the Search button",
+            "match": {
+              "location": "CalculateFeature.the_user_clicks_the_Search_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3115490100,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "The result of undefined is returned",
+            "match": {
+              "arguments": [
+                {
+                  "val": "undefined",
+                  "offset": 14
+                }
+              ],
+              "location": "CalculateFeature.result_is_returned(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 11,
+            "name": "@MyTest1"
+          }
+        ]
+      },
+      {
+        "line": 20,
+        "name": "Enter a maths expression",
+        "description": "",
+        "id": "calculator;enter-a-maths-expression;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2268506000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User enters the maths expression 5^3",
+            "match": {
+              "arguments": [
+                {
+                  "val": "5^3",
+                  "offset": 33
+                }
+              ],
+              "location": "CalculateFeature.user_enters_the_maths_expression(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2906389000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "the user clicks the Search button",
+            "match": {
+              "location": "CalculateFeature.the_user_clicks_the_Search_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 311979200,
+              "error_message": "java.lang.AssertionError: expected [true] but found [false]\r\n\tat org.testng.Assert.fail(Assert.java:94)\r\n\tat org.testng.Assert.failNotEquals(Assert.java:513)\r\n\tat org.testng.Assert.assertTrue(Assert.java:42)\r\n\tat org.testng.Assert.assertTrue(Assert.java:52)\r\n\tat cucumberAutomationFramework.stepDefs.CalculateFeature.result_is_returned(CalculateFeature.java:73)\r\n\tat ✽.Then The result of 128 is returned(Calculate.feature:15)\r\n",
+              "status": "failed"
+            },
+            "line": 15,
+            "name": "The result of 128 is returned",
+            "match": {
+              "arguments": [
+                {
+                  "val": "128",
+                  "offset": 14
+                }
+              ],
+              "location": "CalculateFeature.result_is_returned(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 11,
+            "name": "@MyTest1"
+          }
+        ]
+      },
+      {
+        "line": 21,
+        "name": "Enter a maths expression",
+        "description": "",
+        "id": "calculator;enter-a-maths-expression;;5",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2249372100,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User enters the maths expression 4!",
+            "match": {
+              "arguments": [
+                {
+                  "val": "4!",
+                  "offset": 33
+                }
+              ],
+              "location": "CalculateFeature.user_enters_the_maths_expression(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3010702300,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "the user clicks the Search button",
+            "match": {
+              "location": "CalculateFeature.the_user_clicks_the_Search_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3288650300,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "The result of 24 is returned",
+            "match": {
+              "arguments": [
+                {
+                  "val": "24",
+                  "offset": 14
+                }
+              ],
+              "location": "CalculateFeature.result_is_returned(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 11,
+            "name": "@MyTest1"
+          }
+        ]
+      },
+      {
+        "line": 22,
+        "name": "Enter a maths expression",
+        "description": "",
+        "id": "calculator;enter-a-maths-expression;;6",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2286790700,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User enters the maths expression sqrt(-9)",
+            "match": {
+              "arguments": [
+                {
+                  "val": "sqrt(-9)",
+                  "offset": 33
+                }
+              ],
+              "location": "CalculateFeature.user_enters_the_maths_expression(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2870695100,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "the user clicks the Search button",
+            "match": {
+              "location": "CalculateFeature.the_user_clicks_the_Search_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3313745100,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "The result of 3 i is returned",
+            "match": {
+              "arguments": [
+                {
+                  "val": "3 i",
+                  "offset": 14
+                }
+              ],
+              "location": "CalculateFeature.result_is_returned(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 11,
+            "name": "@MyTest1"
+          }
+        ]
+      },
+      {
+        "line": 25,
+        "name": "Close the browser",
+        "description": "",
+        "id": "calculator;close-the-browser",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1464233900,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "close browser",
+            "match": {
+              "location": "BrowserInitTearDownStepDefinitions.closeBrowser()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 24,
+            "name": "@CloseBrowser"
+          }
+        ]
+      }
+    ],
+    "name": "Calculator",
+    "description": "As a user\r\nI want to use google to evaluate mathematical expressions\r\nSo that I don\u0027t need to use a calculator or do them in my head",
+    "id": "calculator",
+    "keyword": "Feature",
+    "uri": "Calculate.feature"
+  }
+]

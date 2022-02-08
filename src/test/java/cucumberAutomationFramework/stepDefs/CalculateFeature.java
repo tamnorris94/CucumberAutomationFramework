@@ -22,15 +22,18 @@ public class CalculateFeature {
 	
 	WebDriver driver = WebDriverUtils.getDriver();
 	
-	@RunWith(Cucumber.class)
-	@CucumberOptions(plugin = {"pretty", "html:target/cucumber-report.html"},
-	        features= "features",
-	        glue= {"whatever"},
-	        tags= "@StartBrowser or @MyTest1 or @CloseBrowser"
-	        )
-	public class TestRunner {
-		//code omitted
-	}
+//	@RunWith(Cucumber.class)
+//	@CucumberOptions(
+//			plugin = {"pretty", "html:target/cucumber-report.html",
+//					"json:target/cucumber.json",
+//					"com.cucumber.listener.ExtantCucumberFormatter:target/report.html"},
+//	        features= {"src/test/java/cucumberAutomationFramework.features/"},
+//	        glue= {"cucumberAutomationFramework.stepDefs"},
+//	        tags= "@StartBrowser or @MyTest3 or @CloseBrowser"
+//	        )
+//	public class TestRunner {
+//		//code omitted
+//	}
 	
 	//Enters maths expression to test in search input box
 	@Given("^User enters the maths expression (.*)$")
