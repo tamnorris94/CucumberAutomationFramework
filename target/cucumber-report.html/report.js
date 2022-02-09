@@ -34,14 +34,14 @@ formatter.match({
   "location": "BrowserInitTearDownStepDefinitions.initializeDriver()"
 });
 formatter.result({
-  "duration": 3564405800,
+  "duration": 3998954600,
   "status": "passed"
 });
 formatter.match({
   "location": "BrowserInitTearDownStepDefinitions.openBrowser()"
 });
 formatter.result({
-  "duration": 1733041400,
+  "duration": 2378766900,
   "status": "passed"
 });
 formatter.scenarioOutline({
@@ -106,7 +106,7 @@ formatter.examples({
     {
       "cells": [
         "5^3",
-        "128"
+        "129"
       ],
       "line": 20,
       "id": "calculator;enter-a-maths-expression;;4"
@@ -126,6 +126,14 @@ formatter.examples({
       ],
       "line": 22,
       "id": "calculator;enter-a-maths-expression;;6"
+    },
+    {
+      "cells": [
+        "ln e",
+        "1"
+      ],
+      "line": 23,
+      "id": "calculator;enter-a-maths-expression;;7"
     }
   ],
   "keyword": "Examples"
@@ -175,14 +183,14 @@ formatter.match({
   "location": "CalculateFeature.user_enters_the_maths_expression(String)"
 });
 formatter.result({
-  "duration": 2284977100,
+  "duration": 2207376900,
   "status": "passed"
 });
 formatter.match({
   "location": "CalculateFeature.the_user_clicks_the_Search_button()"
 });
 formatter.result({
-  "duration": 4179307100,
+  "duration": 10670872200,
   "status": "passed"
 });
 formatter.match({
@@ -195,7 +203,7 @@ formatter.match({
   "location": "CalculateFeature.result_is_returned(String)"
 });
 formatter.result({
-  "duration": 3137996600,
+  "duration": 3126179200,
   "status": "passed"
 });
 formatter.scenario({
@@ -243,14 +251,14 @@ formatter.match({
   "location": "CalculateFeature.user_enters_the_maths_expression(String)"
 });
 formatter.result({
-  "duration": 2277673200,
+  "duration": 2235534500,
   "status": "passed"
 });
 formatter.match({
   "location": "CalculateFeature.the_user_clicks_the_Search_button()"
 });
 formatter.result({
-  "duration": 3977905700,
+  "duration": 4768861200,
   "status": "passed"
 });
 formatter.match({
@@ -263,7 +271,7 @@ formatter.match({
   "location": "CalculateFeature.result_is_returned(String)"
 });
 formatter.result({
-  "duration": 3115490100,
+  "duration": 3104148000,
   "status": "passed"
 });
 formatter.scenario({
@@ -295,7 +303,7 @@ formatter.step({
 });
 formatter.step({
   "line": 15,
-  "name": "The result of 128 is returned",
+  "name": "The result of 129 is returned",
   "matchedColumns": [
     1
   ],
@@ -311,28 +319,28 @@ formatter.match({
   "location": "CalculateFeature.user_enters_the_maths_expression(String)"
 });
 formatter.result({
-  "duration": 2268506000,
+  "duration": 2229594000,
   "status": "passed"
 });
 formatter.match({
   "location": "CalculateFeature.the_user_clicks_the_Search_button()"
 });
 formatter.result({
-  "duration": 2906389000,
+  "duration": 2993045200,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "128",
+      "val": "129",
       "offset": 14
     }
   ],
   "location": "CalculateFeature.result_is_returned(String)"
 });
 formatter.result({
-  "duration": 311979200,
-  "error_message": "java.lang.AssertionError: expected [true] but found [false]\r\n\tat org.testng.Assert.fail(Assert.java:94)\r\n\tat org.testng.Assert.failNotEquals(Assert.java:513)\r\n\tat org.testng.Assert.assertTrue(Assert.java:42)\r\n\tat org.testng.Assert.assertTrue(Assert.java:52)\r\n\tat cucumberAutomationFramework.stepDefs.CalculateFeature.result_is_returned(CalculateFeature.java:73)\r\n\tat ✽.Then The result of 128 is returned(Calculate.feature:15)\r\n",
+  "duration": 278011200,
+  "error_message": "org.junit.ComparisonFailure: expected:\u003c12[9]\u003e but was:\u003c12[5]\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:115)\r\n\tat org.junit.Assert.assertEquals(Assert.java:144)\r\n\tat cucumberAutomationFramework.stepDefs.CalculateFeature.result_is_returned(CalculateFeature.java:61)\r\n\tat ✽.Then The result of 129 is returned(Calculate.feature:15)\r\n",
   "status": "failed"
 });
 formatter.scenario({
@@ -380,14 +388,14 @@ formatter.match({
   "location": "CalculateFeature.user_enters_the_maths_expression(String)"
 });
 formatter.result({
-  "duration": 2249372100,
+  "duration": 2194006300,
   "status": "passed"
 });
 formatter.match({
   "location": "CalculateFeature.the_user_clicks_the_Search_button()"
 });
 formatter.result({
-  "duration": 3010702300,
+  "duration": 3034018900,
   "status": "passed"
 });
 formatter.match({
@@ -400,7 +408,7 @@ formatter.match({
   "location": "CalculateFeature.result_is_returned(String)"
 });
 formatter.result({
-  "duration": 3288650300,
+  "duration": 3244333000,
   "status": "passed"
 });
 formatter.scenario({
@@ -448,14 +456,14 @@ formatter.match({
   "location": "CalculateFeature.user_enters_the_maths_expression(String)"
 });
 formatter.result({
-  "duration": 2286790700,
+  "duration": 2224092300,
   "status": "passed"
 });
 formatter.match({
   "location": "CalculateFeature.the_user_clicks_the_Search_button()"
 });
 formatter.result({
-  "duration": 2870695100,
+  "duration": 3751271700,
   "status": "passed"
 });
 formatter.match({
@@ -468,11 +476,79 @@ formatter.match({
   "location": "CalculateFeature.result_is_returned(String)"
 });
 formatter.result({
-  "duration": 3313745100,
+  "duration": 3085398800,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 25,
+  "line": 23,
+  "name": "Enter a maths expression",
+  "description": "",
+  "id": "calculator;enter-a-maths-expression;;7",
+  "type": "scenario",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "line": 11,
+      "name": "@MyTest1"
+    }
+  ]
+});
+formatter.step({
+  "line": 13,
+  "name": "User enters the maths expression ln e",
+  "matchedColumns": [
+    0
+  ],
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 14,
+  "name": "the user clicks the Search button",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 15,
+  "name": "The result of 1 is returned",
+  "matchedColumns": [
+    1
+  ],
+  "keyword": "Then "
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "ln e",
+      "offset": 33
+    }
+  ],
+  "location": "CalculateFeature.user_enters_the_maths_expression(String)"
+});
+formatter.result({
+  "duration": 2201060100,
+  "status": "passed"
+});
+formatter.match({
+  "location": "CalculateFeature.the_user_clicks_the_Search_button()"
+});
+formatter.result({
+  "duration": 2871026100,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "1",
+      "offset": 14
+    }
+  ],
+  "location": "CalculateFeature.result_is_returned(String)"
+});
+formatter.result({
+  "duration": 3326392000,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 26,
   "name": "Close the browser",
   "description": "",
   "id": "calculator;close-the-browser",
@@ -480,13 +556,13 @@ formatter.scenario({
   "keyword": "Scenario",
   "tags": [
     {
-      "line": 24,
+      "line": 25,
       "name": "@CloseBrowser"
     }
   ]
 });
 formatter.step({
-  "line": 26,
+  "line": 27,
   "name": "close browser",
   "keyword": "Then "
 });
@@ -494,7 +570,7 @@ formatter.match({
   "location": "BrowserInitTearDownStepDefinitions.closeBrowser()"
 });
 formatter.result({
-  "duration": 1464233900,
+  "duration": 1612148800,
   "status": "passed"
 });
 });

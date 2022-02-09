@@ -15,7 +15,8 @@ import cucumberAutomationFramework.utilityClasses.WebDriverUtils;
 				},
         features= {"src/test/java/cucumberAutomationFramework/featureFiles"},
         glue= {"cucumberAutomationFramework/stepDefs","cucumberAutomationFramework/utilityClasses"},
-        tags= "@StartBrowser,@MyTest1,@CloseBrowser"
+        tags= "@StartBrowser,@MyTest1,@CloseBrowser",
+        monochrome=true
         )
 
 public class mainRunner {

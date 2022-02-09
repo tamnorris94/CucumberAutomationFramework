@@ -17,9 +17,10 @@ Examples:
     | expression | expectedResult |
     | 4+4        | 8              | 
     | 5/0        | undefined      |
-    | 5^3        | 128            | 
+    | 5^3        | 129            | 
     | 4!         | 24	          | 
     | sqrt(-9)   | 3 i	          | 
+    | ln e       | 1   	          | 
     
 @CloseBrowser
 Scenario: Close the browser

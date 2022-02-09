@@ -5,6 +5,7 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
 import cucumber.api.CucumberOptions;
@@ -21,19 +22,6 @@ import org.junit.runner.RunWith;
 public class CalculateFeature {
 	
 	WebDriver driver = WebDriverUtils.getDriver();
-	
-//	@RunWith(Cucumber.class)
-//	@CucumberOptions(
-//			plugin = {"pretty", "html:target/cucumber-report.html",
-//					"json:target/cucumber.json",
-//					"com.cucumber.listener.ExtantCucumberFormatter:target/report.html"},
-//	        features= {"src/test/java/cucumberAutomationFramework.features/"},
-//	        glue= {"cucumberAutomationFramework.stepDefs"},
-//	        tags= "@StartBrowser or @MyTest3 or @CloseBrowser"
-//	        )
-//	public class TestRunner {
-//		//code omitted
-//	}
 	
 	//Enters maths expression to test in search input box
 	@Given("^User enters the maths expression (.*)$")
@@ -62,22 +50,23 @@ public class CalculateFeature {
 	
 	//Validates that the correct result is returned
 	@Then("^The result of (.*) is returned$")
-	public void result_is_returned(String result) throws Throwable {
+	public void result_is_returned(String expectedResult) throws Throwable {
 		//Different elements are returned depending on whether input was valid maths expression
 		Boolean validResultDisplay = driver.findElements(By.xpath("//*[@id=\"cwos\"]")).size() > 0;
 		Boolean invalidResultDisplay = driver.findElements(By.cssSelector("div[class='dDoNo vrBOv vk_bk']")).size() > 0;
 
 		if(validResultDisplay) {
 			String resultText = driver.findElement(By.xpath("//*[@id=\"cwos\"]")).getText();
-			System.out.println("Expected result was  " + result + ". Actual result was " + resultText);
-			assertTrue(resultText.equals(result));			
+			String msg = "Expected result is :" + expectedResult + " but " + resultText + "returned.";
+			Assert.assertEquals(expectedResult, resultText);
 			validResultDisplay = false;
 		} else if(invalidResultDisplay){
 			String resultText = driver.findElement(By.cssSelector("div[class='dDoNo vrBOv vk_bk']")).getText();
-			System.out.println("Expected result was  " + result + ". Actual result was " + resultText);
-			assertTrue(resultText.equals(result));
+			System.out.println("Expected result was  " + expectedResult + ". Actual result was " + resultText);
+			Assert.assertEquals(expectedResult, resultText);
 			invalidResultDisplay = false;
 		} else {
+			System.out.println("Element not found");
 			Assert.assertFalse(true);
 		}
 		Thread.sleep(3000);
