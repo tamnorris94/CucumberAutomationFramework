@@ -53,10 +53,19 @@ There are no JREs installed in the workspace that are strictly compatible with t
 8. Click finish.
 9. Check the newly added installed JRE and click Apply and Close and the build errors should disappear.
     
-#### How to run
+#### How to run (as Cucumber feature)
 
 1. With the Project open in Eclipse, right click on the feature file 'Calculate.feature' under src/test/java/cucumberAutomationFramework\featureFiles and select Run As > Run Configurations.
 
 2. Click the browse button against feature path and browse to the feature file in the directory where the project was installed locally. Will be under sub folder \CucumberAutomationFramework\src\test\java\cucumberAutomationFramework\featureFiles'
 
 3. Click Run and verify that the Chrome browser opens and the cucumber scenarios execute. 
+
+#### How to run (as JUnit test and produce Test reports)
+
+1. Within the Eclipse project explorer right click on the mainRunner class in package cucumberAutomationFramework.runner and select Run As > JUnit Test.
+
+2. All the tests will execute just as they do when running test as cucumber feature.
+
+3. View the generated reports including Extent reports in the location where project was installed locally under sub folder \CucumberProjects\CucumberAutomationFramework\target.
+
