@@ -15,7 +15,7 @@ Scenario Outline: Enter a maths expression
 	Then The result of <expectedResult> is returned  
 Examples: 
     | expression | expectedResult |
-    | 4+4        | 8              | 
+    | 4+4        | 9              | 
     | 5/0        | undefined      |
     | 5^3        | 129            | 
     | 4!         | 24	          | 
